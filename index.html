@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <!-- Gooogle Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/dist/main.css">
+
+  <title>Todo app</title>
+</head>
+
+<body id="body">
+  <main class="container">
+    <header class="grid">
+      <h1 class="ff-san-jos fs-600 letter-spacing-1 text-white uppercase">TODO</h1>
+      <div id="theme" aria-selected="false" onclick="changeTheme()"></div>
+    </header>
+
+    <section id="panel">
+      <!-- take input -->
+      <div id="panel__input">
+        <div id="done"></div>
+        <input id="todo-input" type="text" value="" placeholder="Create a new to-do" required>
+      </div>
+      <!-- create new to-do items -->
+      <div id="panel__new-input" style="display: none;">
+        <div id="img-checked"></div>
+        <p></p>
+        <button id="cross"></button>
+      </div>
+
+    </section>
+    <!-- Filter button -->
+    <div id="option" class="option grid">
+      <p id="item" >0 items Left</p>
+      <a class="filter right  fs-200" onclick="completed()">Completed</a>
+
+    </div>
+  </main>
+
+  <!-- jAVAsCRIPT -->
+  <script src="/main.js"></script>
+
+</body>
+
+</html>
