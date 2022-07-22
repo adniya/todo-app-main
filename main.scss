@@ -410,4 +410,10 @@ header {
   body{
     background: url(/images/bg-desktop-light.jpg) no-repeat, var(--vd-Blue);
   }
+  .container{
+    min-width: 50%;
+  }
+  .option {
+    width: 50%;
+  }
 }
